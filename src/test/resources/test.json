@@ -1,0 +1,59 @@
+{
+   "$schema": "http://json-schema.org/draft-07/schema",
+   "type":"array",
+   "items":{
+      "$ref":"#/definitions/rest"
+   },
+   "definitions":{
+      "rest":{
+         "type":"object",
+         "required":[
+            "web_pages",
+            "name",
+            "alpha_two_code",
+            "state-province",
+            "domains",
+            "country"
+         ],
+         "properties":{
+            "web_pages":{
+               "type":"array",
+               "items":{
+                  "type":"string"
+               }
+            },
+            "name":{
+               "type":"string",
+               "description":"this is the name"
+            },
+            "alpha_two_code":{
+               "type":[
+                  "null",
+                  "string"
+               ],
+               "description":"this is the state"
+            },
+            "state-province":{
+               "type":[
+                  "null",
+                  "string"
+               ],
+               "description":"this is the state-provinace"
+            },
+            "domains":{
+               "type":"array",
+               "items":{
+                  "type":"string"
+               }
+            },
+            "country":{
+               "type":[
+                  "null",
+                  "string"
+               ],
+               "description":"this is the country"
+            }
+         }
+      }
+   }
+}
